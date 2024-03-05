@@ -20,8 +20,8 @@ export default function Projects() {
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectsData.map((project) => (
-          <Link href={`/project/${project.id}`}>
-          <React.Fragment key={project.id}>
+          <Link href={`/project/${project.id}`} key={project.id}>
+          <React.Fragment >
             <Project {...project} />
           </React.Fragment>
           </Link>
